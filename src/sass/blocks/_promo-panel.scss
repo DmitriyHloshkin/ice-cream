@@ -1,0 +1,125 @@
+.promo-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 79px;
+        height: 79px;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu-list {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    &__manu-item {
+        display: block;
+        width: 77px;
+        position: relative;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: $main-color;
+            transition: all 1s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        color: $grey-color;
+
+        &:hover {
+            font-weight: 700;
+            color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo-panel {
+        &__logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        &__manu-item {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo-panel {
+        &__logo {
+            display: flex;
+            align-items: center;
+        }
+
+        &__manu-item {
+            &:not(:last-child) {
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .promo-panel {
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: -100%;
+        background-color: $bg-color;
+        height: 100vh;
+        transition: all 1s;
+
+        &__logo {
+            margin-bottom: 20px;
+        }
+
+        &__menu-list {
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        &_active {
+            left: 0;
+        }
+    }
+}
