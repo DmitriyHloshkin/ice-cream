@@ -1,0 +1,81 @@
+.benefit {
+    min-height: 415px;
+    padding: 90px 0 90px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__elem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__img {
+        width: 50px;
+        height: 80px;
+        position: relative;
+
+        img {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__tittle {
+        font-family: "Hind Madurai";
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+        margin-bottom: 9px;
+    }
+
+    &__subtittle {
+        max-width: 198px;
+        font-family: "Hind Madurai";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: $grey-color;
+    }
+}
+
+@media (max-width: 1200px) {
+    .benefit {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .benefit {
+        padding: 50px 0 50px 0;
+        min-height: 200px;
+
+        &__tittle {
+            font-size: 16px;
+        }
+
+        &__subtittle {
+            max-width: 198px;
+            font-size: 12px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .benefit {
+        &__wrap {
+            display: block;
+        }
+    }
+}
