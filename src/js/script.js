@@ -36,4 +36,15 @@ $(document).ready(function () {
         });
     }
 
+    //tabs
+    $('.tabs__manu-item').on('click', function () {
+        if ($(this).hasClass('tabs__manu-item_active')) {
+            return;
+        }
+        $(this)
+        .addClass('tabs__manu-item_active').siblings().removeClass('tabs__manu-item_active')
+
+        $('.products__catalog').removeClass('products__catalog_active').eq($(this).index()).addClass('products__catalog_active');
+    })
+
 });

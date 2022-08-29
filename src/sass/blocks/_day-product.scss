@@ -1,3 +1,9 @@
 .day-product {
     background-color: $bg-color;
 }
+
+@media (max-width: 575px) {
+    .day-product {
+        min-height: 440px;
+    }
+}
