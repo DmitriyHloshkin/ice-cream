@@ -1,6 +1,7 @@
 .benefit {
     min-height: 415px;
     padding: 90px 0 90px 0;
+    position: relative;
 
     &__wrap {
         display: flex;
@@ -76,6 +77,11 @@
     .benefit {
         &__wrap {
             display: block;
+            position: relative;
+        }
+
+        &__wrap &__elem {
+            display: flex;
         }
     }
 }
