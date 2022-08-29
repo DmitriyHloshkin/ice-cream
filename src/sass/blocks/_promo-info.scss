@@ -49,6 +49,10 @@
             width: 100%;
         }
     }
+
+    &_day-product {
+        top: 106px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -75,6 +79,11 @@
             width: 560px;
             top: 9px;
         }
+
+
+        &_day-product {
+            top: 52px;
+        }
     }
 }
 
@@ -95,6 +104,10 @@
 
         &__img {
             max-width: 350px;
+        }
+
+        &_day-product {
+            top: 52px;
         }
     }
 }
@@ -119,6 +132,10 @@
 
         &__main-info {
             margin-left: 30px;
+        }
+
+        &_day-product {
+            top: 16px;
         }
     }
 }

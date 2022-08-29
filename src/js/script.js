@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     function isMobile() {
-        return $(window).width() <= 576;
+        return $(window).width() < 576;
     }
 
     function initializedSlider() {
