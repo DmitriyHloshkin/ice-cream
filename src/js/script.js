@@ -36,4 +36,20 @@ $(document).ready(function () {
         });
     }
 
+
+    $('.review__users').slick({
+        variableWidth: true,
+        slidesToScroll: 1,
+        asNavFor: '.review__wrapper',
+        prevArrow: '<img class="review__arrow review__arrow_left" src="icons/angle-left-solid.svg" alt="left-arrow">',
+        nextArrow: '<img class="review__arrow review__arrow_right" src="icons/angle-right-solid.svg" alt="left-arrow">',
+        centerMode: true,
+        autoplay: true
+    });
+
+    $('.review__wrapper').slick({
+        variableWidth: true,
+        arrows: false,
+    });
+
 });
