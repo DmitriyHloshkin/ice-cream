@@ -30,7 +30,7 @@ $(document).ready(function () {
 
     function initializedSlider() {
         slickSlider.slick({
-            prevArrow: '<button class="arrows arrows_prev"><img src="icons/prev-arrow.svg" alt="arrow"></button>',
+            prevArrow: '<button class="arrows arrows_prev"><img src="icons/next-arrow.svg" alt="arrow"></button>',
             nextArrow: '<button class="arrows arrows_next"><img src="icons/next-arrow.svg" alt="arrow"></button>',
             autoplay: true
         });
@@ -63,4 +63,11 @@ $(document).ready(function () {
         $('.products__catalog').removeClass('products__catalog_active').eq($(this).index()).addClass('products__catalog_active');
     })
 
+    const wow = new WOW({
+        boxClass:     'wow',
+        animateClass: 'animate__animated'
+    });
+    wow.init();
+
 });
+

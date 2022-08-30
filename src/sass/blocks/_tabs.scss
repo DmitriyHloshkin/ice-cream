@@ -23,10 +23,6 @@
         font-size: 18px;
         color: $grey-color;
 
-        &_active {
-            color: rgba(21, 1, 1, 1);
-        }
-
         &:not(:last-child) {
             margin-right: 40px;
         }
@@ -43,6 +39,14 @@
 
         &:hover::after {
             width: 100%;
+        }
+
+        &_active {
+            color: rgba(21, 1, 1, 1);
+
+            &:after {
+                width: 100%;
+            }
         }
 
         &:hover {

@@ -1,6 +1,6 @@
 .reviews {
-    min-height: 600px;
-    padding: 112px 0 150px 0;
+    min-height: 500px;
+    // padding: 112px 0 150px 0;
 
     &__wrapp {
         display: flex;
@@ -20,6 +20,7 @@
 
 @media (max-width: 1200px) {
     .reviews {
+        min-height: 400px;
         &__img {
             width: 500px;
             height: 400px;
@@ -29,8 +30,8 @@
 
 @media (max-width: 991px) {
     .reviews {
-        min-height: 500px;
-        padding: 85px 0 60px 0;
+        min-height: 350px;
+        // padding: 85px 0 60px 0;
 
         &__img {
             width: 400px;
@@ -40,8 +41,8 @@
 }
 
 @media (max-width: 767px) {
-    .reviews { 
-        padding: 40px 0 60px 0;
+    .reviews {
+        // padding: 40px 0 60px 0;
         &__wrapp {
             flex-direction: column;
         }
@@ -54,7 +55,6 @@
 
 @media (max-width: 575px) {
     .reviews {
-
         &__img {
             width: 300px;
             height: 217px;

@@ -8,14 +8,14 @@
                 width: 230px;
                 height: 60px;
             }
-        
+
             &-track {
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-        
+
             &-center {
                 transform: scale(1.5);
             }
@@ -23,7 +23,6 @@
     }
 
     &__user {
-
         width: 35px;
         height: 35px;
         margin-right: 35px;
@@ -33,18 +32,19 @@
         }
     }
 
-    &__arrow{
+    &__arrow {
         position: absolute;
         width: 25px;
         height: 25px;
-        
+
         &:hover {
             cursor: pointer;
         }
 
-        &_left {         
+        &_left {
             left: -29px;
             top: 40%;
+            z-index: 2;
         }
 
         &_right {
@@ -61,15 +61,13 @@
                 width: 331px;
                 min-height: 174px;
             }
-        
+
             &-track {
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
-        
-
         }
     }
 
@@ -112,28 +110,31 @@
         font-size: 16px;
         line-height: 24px;
         color: $grey-color;
+
+        span {
+            color: #F6762C;
+            font-size: 22px;
+        }
     }
 }
 
-
 @media (max-width: 1200px) {
-    .review { 
-        width:300px;
+    .review {
+        width: 300px;
 
         &__arrow {
-
-            &_left {         
+            &_left {
                 left: -11px;
                 top: 31%;
             }
-    
+
             &_right {
                 right: 58px;
                 top: 29%;
             }
         }
 
-        &__wrapper { 
+        &__wrapper {
             .slick {
                 &-list {
                     width: 300px;
@@ -148,17 +149,17 @@
 }
 
 @media (max-width: 767px) {
-    .review { 
+    .review {
         order: 1;
     }
 }
 
 @media (max-width: 575px) {
-    .review { 
+    .review {
         width: 250px;
         &__wrapper {
             margin-bottom: 15px;
-    
+
             .slick {
                 &-list {
                     width: 250px;
@@ -166,7 +167,7 @@
             }
         }
 
-        &__arrow {   
+        &__arrow {
             &_right {
                 right: 14px;
                 top: 31%;
@@ -176,17 +177,17 @@
         &__info {
             width: 250px;
         }
-    
+
         &__name {
             font-weight: 500;
             font-size: 18px;
         }
-    
+
         &__country {
             font-weight: 500;
             font-size: 12px;
         }
-    
+
         &__comment {
             font-weight: 400;
             font-size: 14px;
