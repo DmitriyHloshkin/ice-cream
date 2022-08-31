@@ -2,11 +2,15 @@ let slickSlider = $('.benefit__wrap');
 
 $(document).ready(function () {
 
-    // burger menu
-    $('.burger').on('click', function () {
-        $('.promo-panel').toggleClass('promo-panel_active');
-        $('.burger__elem').toggleClass('burger__elem_active');
-    });
+    function toggleBurger(trigerElem) {
+        $(trigerElem).on('click', function () {
+            $('.promo-panel').toggleClass('promo-panel_active');
+            $('.burger__elem').toggleClass('burger__elem_active');
+        });
+    }
+
+    toggleBurger('.promo-panel__link');
+    toggleBurger('.burger');
 
     //slick-slider
     if (isMobile()) {
@@ -64,7 +68,7 @@ $(document).ready(function () {
     })
 
     const wow = new WOW({
-        boxClass:     'wow',
+        boxClass: 'wow',
         animateClass: 'animate__animated'
     });
     wow.init();

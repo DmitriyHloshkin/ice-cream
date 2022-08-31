@@ -42,10 +42,14 @@
                 <nav class="promo-panel__nav">
                     <ul class="promo-panel__menu-list">
                         <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#">Home</a></li>
-                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#">Product</a></li>
-                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#">Pricing</a></li>
-                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#">Testimonials</a></li>
-                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#">Contact Us</a></li>
+                        <li class="promo-panel__manu-item"><a class="promo-panel__link"
+                                href="#section-products">Product</a></li>
+                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#section-help">Ask us</a>
+                        </li>
+                        <li class="promo-panel__manu-item"><a class="promo-panel__link" href="#section-app-food">App
+                                food</a></li>
+                        <li class="promo-panel__manu-item"><a class="promo-panel__link"
+                                href="#section-contact-us">Contact Us</a></li>
                     </ul>
                 </nav>
 
@@ -161,7 +165,7 @@
         </div>
     </section>
 
-    <section class="products">
+    <section class="products" id="section-products">
         <div class="container">
             <h2 class="products__tittle">
                 Our Product
@@ -525,7 +529,7 @@
         </div>
     </section>
 
-    <section class="mobile-app">
+    <section class="mobile-app" id="section-app-food">
         <div class="container">
 
             <div class="mobile-app__img animate__animated animate__fadeInLeftBig wow">
@@ -559,14 +563,15 @@
         </div>
     </section>
 
-    <section class="help">
+    <section class="help" id="section-help">
         <div class="container">
             <h2 class="help__tittle">
                 Have Question in Mind? Let us help you
             </h2>
 
             <form action="#" class="help__form" id="form-mail">
-                <input name="question" class="help__input-question" type="text" placeholder="Enter your question" required maxlength="500">
+                <input name="question" class="help__input-question" type="text" placeholder="Enter your question"
+                    required maxlength="500">
 
                 <button class="button button_help-form">
                     Send
@@ -576,7 +581,72 @@
         </div>
     </section>
 
-    
+    <footer class="footer" id="section-contact-us">
+        <div class="container">
+            <div class="footer__logo">
+                <a href="#"><img src="icons/logo.png" alt="logo ice-cream"></a>
+            </div>
+
+            <div class="footer__wrap">
+                <div class="footer__fllow-us">
+                    <div class="footer__descr">
+                        Some food has looked so awful that it's looked like something that the dog's brought home.
+                    </div>
+
+                    <h2 class="footer__fllow-title">
+                        Fllow Us
+                    </h2>
+
+                    <div class="footer__social">
+                        <a href="#"><img src="icons/footer-icon/facebook 1.svg" alt="facebook"></a>
+                        <a href="#"><img src="icons/footer-icon/instagram 1.svg" alt="instagram"></a>
+                        <a href="#"><img src="icons/footer-icon/linkedin 1.svg" alt="linkedin"></a>
+                        <a href="#"><img src="icons/footer-icon/twitter 1.svg" alt="twitter"></a>
+                    </div>
+                </div>
+
+                <div class="footer__about-main">
+                    <div class="footer__about-elem"><a href="#">Home</a></div>
+                    <div class="footer__about-elem"><a href="#">Product</a></div>
+                    <div class="footer__about-elem"><a href="#">Blog</a></div>
+                    <div class="footer__about-elem"><a href="#">Pricing</a></div>
+                    <div class="footer__about-elem"><a href="#">Testimonials</a></div>
+                    <div class="footer__about-elem"><a href="#">Contact Us</a></div>
+                </div>
+
+                <div class="footer__more-info">
+                    <div class="footer__more-elem"><a href="#">Delivery Information</a></div>
+                    <div class="footer__more-elem"><a href="#">Privacy Policy</a></div>
+                    <div class="footer__more-elem"><a href="#">Terms & Condition</a></div>
+                    <div class="footer__more-elem"><a href="#">Search Terms</a></div>
+                    <div class="footer__more-elem"><a href="#">Order & Return</a></div>
+                </div>
+
+                <div class="footer__subscribe">
+                    <div class="footer__subscribe-tittle">
+                        Newsletter
+                    </div>
+
+                    <form action="#" class="subscribe-form" id="form-subscribe">
+                        <input name="subscribe" class="subscribe-form__input-mail" type="email" placeholder="Your Email"
+                            required>
+
+                        <button class="button button_subscribe">
+                            Subscribe
+                        </button>
+                    </form>
+
+                    <div class="footer__payment">
+                        <a href="#"><img src="icons/footer-icon/pp.svg" alt="#"></a>
+                        <a href="#"><img src="icons/footer-icon/master-card.svg" alt="#"></a>
+                        <a href="#"><img src="icons/footer-icon/visa.svg" alt="#"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/slick_slider/slick.min.js"></script>
     <script src="js/wow/wow.min.js"></script>

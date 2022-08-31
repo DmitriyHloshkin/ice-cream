@@ -41,6 +41,11 @@
         height: 74px;
     }
 
+    &_subscribe {
+        width: 125px;
+        height: 55px;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -52,6 +57,11 @@
         &_help-form {
             width: 134px;
             height: 50px;
+        }
+
+        &_subscribe {
+            width: 125px;
+            height: 55px;
         }
     }
 }
@@ -66,6 +76,11 @@
             width: 134px;
             height: 50px;
         }
+
+        &_subscribe {
+            width: 125px;
+            height: 55px;
+        }
     }
 }
 
@@ -74,5 +89,11 @@
         &_help-form {
             height: 30px;
         }
+
+        &_subscribe {
+            width: 125px;
+            height: 30px;
+        }
     }
+
 }

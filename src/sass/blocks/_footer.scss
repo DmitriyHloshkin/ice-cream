@@ -1,0 +1,175 @@
+.footer {
+    min-height: 381px;
+    padding: 70px 0 114px 0;
+    background: #0a0808;
+    color: rgb(100%, 100%, 100%, 0.7);
+
+    a {
+        color: rgb(100%, 100%, 100%, 0.7);
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__fllow-us {
+        max-width: 207px;
+    }
+
+    &__descr {
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+    }
+
+    &__fllow-title {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        color: #ffffff;
+        margin-bottom: 8px;
+    }
+
+    &__social {
+        line-height: 12px;
+    }
+
+    &__subscribe-tittle {
+        font-weight: 500;
+        font-size: 16px;
+        color: #ffffff;
+        margin-bottom: 13px;
+    }
+
+    &__payment {
+        letter-spacing: 15px;
+    }
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 388px;
+    height: 55px;
+    margin-bottom: 18px;
+
+    &__input-mail {
+        transform: translateX(6px);
+        height: 55px;
+        width: 263px;
+        padding-left: 32px;
+        background-color: #0a0808;
+        border: 2px solid $main-color;
+        border-radius: 5px;
+        outline: none;
+
+        font-weight: 400;
+        font-size: 14px;
+        color: rgb(100%, 100%, 100%, 0.6);
+    }
+}
+
+@media (max-width: 991px) {
+    .footer {
+        padding: 28px 0 28px 0;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__about-main,
+        &__more-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        &__about-elem:not(:last-child),
+        &__more-elem:not(:last-child) {
+            margin-right: 15px;
+        }
+
+        &__fllow-us {
+            max-width: 100%;
+            order: 1;
+        }
+
+        &__descr {
+            margin-bottom: 5px;
+        }
+
+        &__logo {
+            width: 79px;
+            height: 79px;
+            margin: 0 auto;
+        }
+
+        &__subscribe-tittle {
+            margin-bottom: 2px;
+        }
+
+        &__subscribe {
+            margin-left: -103px;
+            margin-bottom: 15px;
+        }
+
+        &__fllow-title {
+            margin-bottom: 0;
+        }
+    }
+
+    .subscribe-form {
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        &__wrap {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &__about-main,
+        &__more-info {
+            margin-bottom: 5px;
+        }
+
+        &__more-info {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        a {
+            font-size: 9px;
+        }
+
+        &__subscribe {
+            margin-left: 0;
+        }
+
+        &__subscribe-tittle {
+            font-size: 13px;
+        }
+    }
+
+    .subscribe-form {
+        margin-bottom: 6px;
+        height: 33px;
+
+        &__input-mail {
+            width: 90%;
+            height: 30px;
+        }
+
+        &__input-mail {
+            transform: translateX(0);
+        }
+    }
+}
