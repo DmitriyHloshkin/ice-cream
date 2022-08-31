@@ -1,0 +1,11 @@
+@mixin afterElementMobileAppStep($img) {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 30px;
+    height: 30px;
+    background: url($img) center center/contain no-repeat;
+    background-color: #fff;
+}

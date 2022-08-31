@@ -3,6 +3,7 @@
 @use "../fonts/Fredoka-one/fredoka-one-font.css";
 
 @import "base/variable";
+@import "base/mixins";
 
 * {
     font-family: "Roboto", sans-serif;
@@ -49,4 +50,4 @@
 @import "blocks/tabs";
 @import 'blocks/reviews';
 @import 'blocks/review';
-
+@import 'blocks/mobile-app';
