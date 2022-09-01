@@ -46,6 +46,11 @@
         height: 55px;
     }
 
+    &_order {
+        width: 100%;
+        height: 30px;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -62,6 +67,12 @@
         &_subscribe {
             width: 125px;
             height: 55px;
+        }
+
+        &_order {
+            width: 100%;
+            height: 30px;
+            margin-top: 15px;
         }
     }
 }
@@ -81,6 +92,11 @@
             width: 125px;
             height: 55px;
         }
+
+        &_order {
+            width: 100%;
+            height: 30px;
+        }
     }
 }
 
@@ -94,6 +110,10 @@
             width: 125px;
             height: 30px;
         }
-    }
 
+        &_order {
+            width: 100%;
+            height: 30px;
+        }
+    }
 }

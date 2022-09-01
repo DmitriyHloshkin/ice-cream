@@ -1,0 +1,83 @@
+.modal-wrap {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0%, 0%, 0%, 0.5);
+    z-index: 3;
+}
+
+.modal {
+    position: fixed;
+    width: 250px;
+    height: 180px;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: $bg-color;
+    border-radius: 5px;
+    padding: 15px 20px;
+
+    &__tittle {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__subtittle {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    &__close {
+        position: absolute;
+        right: -25px;
+        top: -18px;
+        color: red;
+        font-size: 36px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &_finish {
+        display: none;
+        height: 85px;
+    }
+
+    &_order {
+        display: none;
+        width: 300px;
+        height: 180px;
+    }
+}
+
+.order-form {
+    &_input-phone {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 30px;
+        min-height: 30px;
+        width: 250px;
+        background: #fafafa;
+    }
+}
+
+#question-error,
+#email-error {
+    color: red;
+    position: absolute;
+    transform: translate(10px, 54px);
+    font-size: 10px;
+}
+
+#phone-error {
+    color: red;
+    text-align: center;
+    font-size: 10px;
+}

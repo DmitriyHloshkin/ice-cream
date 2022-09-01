@@ -53,7 +53,7 @@
                     </ul>
                 </nav>
 
-                <button class="button">
+                <button class="button" data-button="buy">
                     Buy Now
                 </button>
 
@@ -76,7 +76,7 @@
                         after one mouthful I've been left eating my thoughts, my words.
                     </div>
 
-                    <button class="button">
+                    <button class="button" data-button="buy">
                         Buy Now
                     </button>
 
@@ -151,7 +151,7 @@
                         US.Together with McDonald’s, Burger King has grown to become synonymous.
                     </div>
 
-                    <button class="button">
+                    <button class="button" data-button="buy">
                         Buy Now
                     </button>
 
@@ -200,7 +200,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -226,7 +226,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -252,7 +252,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -280,7 +280,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -306,7 +306,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -332,7 +332,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -360,7 +360,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -386,7 +386,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -412,7 +412,7 @@
                         <div class="products__price">
                             $19.55 <span>$22.55</span>
                         </div>
-                        <button class="button">
+                        <button class="button" data-button="buy">
                             Buy Now
                         </button>
                     </div>
@@ -569,7 +569,7 @@
                 Have Question in Mind? Let us help you
             </h2>
 
-            <form action="#" class="help__form" id="form-mail">
+            <form action="#" class="help__form" id="form-question">
                 <input name="question" class="help__input-question" type="text" placeholder="Enter your question"
                     required maxlength="500">
 
@@ -628,7 +628,7 @@
                     </div>
 
                     <form action="#" class="subscribe-form" id="form-subscribe">
-                        <input name="subscribe" class="subscribe-form__input-mail" type="email" placeholder="Your Email"
+                        <input name="email" class="subscribe-form__input-mail" type="email" placeholder="Your Email"
                             required>
 
                         <button class="button button_subscribe">
@@ -647,9 +647,52 @@
         </div>
     </footer>
 
+    <div class="modal-wrap">
+        
+        <div class="modal modal_finish">
+            <div class="modal__close">
+                &times;
+            </div>
+
+            <h3 class="modal__tittle">
+                Thank you for your order
+            </h3>
+
+            <div class="modal__subtittle">
+                We'll get back to you
+            </div>
+        </div>
+
+        <div class="modal modal_order">
+            <div class="modal__close">
+                &times;
+            </div>
+
+            <h3 class="modal__tittle">
+                Provide your number 
+            </h3>
+
+            <h3 class="modal__subtittle">
+                so we can contact you
+            </h3>
+
+            <form action="#" class="order-form" id="form-order">
+                <input name="phone" class="order-form_input-phone" placeholder="Your Phone" required>
+
+                <button class="button button_order">
+                    Submit
+                </button>
+            </form>
+
+        </div>
+
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/slick_slider/slick.min.js"></script>
     <script src="js/wow/wow.min.js"></script>
+    <script src="js/form-validate/jquery_validate.min.js"></script>
+    <script src="js/maskedinput/maskedinput.min.js"></script>
 
     <script src="js/script.js"></script>
 </body>

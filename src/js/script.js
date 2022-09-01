@@ -73,5 +73,69 @@ $(document).ready(function () {
     });
     wow.init();
 
+    //validation form
+    $("form").each(function () {
+        $(this).validate({
+            messages: {
+                question: "*Please enter your question",
+                phone: "*Enter the correct phone number",
+                email: {
+                    required: "*Please enter your email",
+                    email: "*Your mail must match the template name@domain.com"
+                }
+            }
+        });
+
+    });
+
+    //Phone mask
+    jQuery(function ($) {
+        $("input[name=phone]").mask("+38(099) 999 99 99");
+    });
+
+    //modals
+    $('.modal__close').on('click', function () {
+        $('.modal_finish, .modal-wrap').fadeOut();
+    });
+
+    $('[data-button = buy]').on('click', function () {
+        $('.modal-wrap, .modal_order').fadeIn();
+    });
+
+
+    function showForm(formElem) {
+        $(formElem).submit(function (e) {
+            e.preventDefault();
+            if (!$(this).valid()) {
+                return;
+            }
+
+            if (formElem === '#form-order') {
+                $('.modal_order').fadeOut();
+                $('.modal_finish .modal__tittle').text("Thank you for your order");
+                $('.modal_finish .modal__subtittle').text("We'll get back to you");
+            } else {
+                $('.modal-wrap').fadeIn();
+
+                if (formElem === '#form-subscribe') {
+                    $('.modal_finish .modal__tittle').text("Thank you for your subscription");
+                    $('.modal_finish .modal__subtittle').text("");
+                } else {
+                    $('.modal_finish .modal__tittle').text("Thank you your question")
+                    $('.modal_finish .modal__subtittle').text("We'll be sure to answer you");
+                }
+            }
+
+            $('.modal_finish').fadeIn();
+
+            $(formElem).trigger('reset');
+            return false;
+        });
+    }
+
+    showForm('#form-order');
+    showForm('#form-subscribe');
+    showForm('#form-question');
+
 });
 
