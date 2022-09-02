@@ -137,5 +137,14 @@ $(document).ready(function () {
     showForm('#form-subscribe');
     showForm('#form-question');
 
+    //arrow up
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.arrow-up').fadeIn();
+        } else {
+            $('.arrow-up').fadeOut();
+        }
+    });
+
 });
 
