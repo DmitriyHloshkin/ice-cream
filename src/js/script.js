@@ -19,7 +19,9 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         if (isMobile()) {
-            initializedSlider();
+            if (!slickSlider.hasClass('slick-initialized')) {
+                initializedSlider();
+            }
         } else {
             if (slickSlider.hasClass('slick-initialized')) {
                 slickSlider.slick('unslick');
