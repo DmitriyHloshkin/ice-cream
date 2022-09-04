@@ -1,6 +1,10 @@
-@use "../fonts/Roboto/roboto-font.css";
-@use "../fonts/Hind-Madurai/hind-madurai-font.css";
-@use "../fonts/Fredoka-one/fredoka-one-font.css";
+@use "fonts/roboto-font";
+@use "fonts/hind-madurai-font";
+@use "fonts/fredoka-one-font";
+
+@use "reboot/bootstrap-reboot";
+@use "slick_slider/slick";
+@use "animate/animate";
 
 @import "base/variable";
 @import "base/mixins";
